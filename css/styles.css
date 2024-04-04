@@ -380,7 +380,6 @@ html {
   width: 100vw;
   background-color: rgba(255, 247, 235, 0.2);
   z-index: 100;
-  transform: scaleX(0);
   animation: none;
 }
 .navbar-container.animate-after::after {
