@@ -1,0 +1,32 @@
+.gallery {
+  background-color: $color-black;
+  text-align: end;
+}
+.slider {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  max-height: 50rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  &-img {
+    border-radius: 1rem;
+    max-height: 50rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 3.6rem;
+  width: 3.6rem;
+  background-color: rgba($color-gray, 0.8);
+  border-radius: 50%;
+  background-size: 60%;
+}
+
+.carousel {
+  max-width: 90rem;
+  margin: 0 auto;
+}

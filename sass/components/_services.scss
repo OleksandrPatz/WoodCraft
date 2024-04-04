@@ -1,0 +1,75 @@
+.section {
+  background-color: $color-gray;
+  padding: 9.6rem 2.4rem;
+  padding-top: 12.8rem;
+  border-bottom: 1px rgba($color-gray-light, 0.2) solid;
+}
+
+.top-heading {
+  color: $color-white;
+}
+
+.top-paragraph {
+  color: $color-primary;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.products {
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.4rem;
+    margin-bottom: 2.4rem;
+    @media screen and (max-width: 50rem) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 1.4rem;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+    &-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &-icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-icon {
+        margin-top: 1.2rem;
+        align-self: flex-start;
+        font-size: 3.6rem;
+        fill: $color-primary;
+      }
+    }
+
+    &-content {
+      padding: 1.2rem;
+    }
+
+    &-paragraph {
+      font-family: system-ui;
+      font-size: 1.4rem;
+      font-weight: 200;
+      color: #eee;
+      line-height: 1.7;
+      letter-spacing: 1.2px;
+    }
+    &-span {
+      display: inline-block;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      color: $color-white;
+    }
+  }
+}

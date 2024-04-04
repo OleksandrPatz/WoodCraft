@@ -1,0 +1,21 @@
+.contacts {
+  &__box {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    @media screen and (max-width: 50rem) {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+  }
+  &__item {
+    justify-content: flex-end;
+    &-content {
+      text-align: end;
+    }
+
+    &-icon-box-icon {
+      font-size: 5.4rem;
+      fill: $color-primary;
+    }
+  }
+}

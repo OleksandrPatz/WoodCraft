@@ -1,0 +1,87 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(19.5rem, 1fr));
+
+  @media screen and (max-width: 50rem) {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+  @media screen and (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+
+  .div {
+    padding: 10rem;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-1 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/bg.jpg");
+    }
+    &-2 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/man-in-morror-sm.jpg");
+    }
+    &-3 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/sample-2.jpg");
+    }
+    &-4 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/man.jpg");
+    }
+    &-5 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/epoxy-table.jpg");
+    }
+    &-6 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/slide-2.jpg");
+    }
+    &-7 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/background-3.jpg");
+    }
+    &-8 {
+      background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url("../img/slide-5.jpg");
+    }
+  }
+}

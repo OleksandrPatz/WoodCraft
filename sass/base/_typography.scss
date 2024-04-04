@@ -1,0 +1,57 @@
+body {
+  font-family: "Pt sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 7.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: $color-white;
+
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+
+  @media only screen and (max-width: $bp-sm) {
+    font-size: 6rem;
+  }
+}
+.heading-2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+}
+.heading-4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.top-paragraph {
+  letter-spacing: 1px;
+}
+
+.navbar {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav-list-link {
+  letter-spacing: 1.1px;
+}
+
+// -Font sizes (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// SPACING SYSTEM (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128

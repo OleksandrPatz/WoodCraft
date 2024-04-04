@@ -1,0 +1,44 @@
+.link-default,
+.link-default:link,
+.link-default:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.2rem;
+}
+
+.margin-bottom-s {
+  margin-bottom: 2.4rem;
+}
+.margin-bottom-m {
+  margin-bottom: 3.6rem;
+}
+.margin-bottom-xl {
+  margin-bottom: 6.4rem;
+}
+
+.margin-bottom-xxl {
+  margin-bottom: 8rem;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.container {
+  max-width: 124rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-templates-4 {
+  grid-template-columns: repeat(4, 1fr);
+  @media only screen and (max-width: $bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

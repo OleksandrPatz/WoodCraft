@@ -1,0 +1,28 @@
+.statistic {
+  &__box {
+    padding: 2.4rem 0;
+    text-align: center;
+
+    &-quantity {
+      display: block;
+
+      color: $color-white;
+      font-size: 6.2rem;
+    }
+    &-name {
+      display: block;
+      color: $color-gray;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__grid-settings {
+    justify-content: center;
+    background-color: $color-primary;
+    column-gap: 1rem;
+    border-radius: 1rem;
+  }
+}
