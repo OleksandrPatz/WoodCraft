@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     counters.forEach((counter) => {
       const target = +counter.getAttribute("data-target");
       const step = (count) => {
-        const increment = target / 200;
+        const increment = target / 50;
         if (count < target) {
           counter.innerText = Math.ceil(count + increment);
           requestAnimationFrame(() => step(+counter.innerText));
