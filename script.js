@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(() => {
       // Видимість блоків продуктів
       productsBoxes.forEach((box) => {
-        if (box.getBoundingClientRect().top < window.innerHeight - 200) {
+        if (box.getBoundingClientRect().top < window.innerHeight - 100) {
           box.querySelectorAll(".products__item").forEach((item, index) => {
             setTimeout(() => {
               item.classList.add("products__item-visible");
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Анімація секції статистики
       if (
         !statisticSection.classList.contains("animated") &&
-        statisticSection.getBoundingClientRect().top < window.innerHeight - 200
+        statisticSection.getBoundingClientRect().top < window.innerHeight - 100
       ) {
         statisticSection.classList.add("animated");
         animateStatistics();
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       if (nav.classList.contains("nav-open")) {
-        toggleNav(); // Забезпечує закриття навігації при кліку по посиланню
+        toggleNav();
       }
     });
   });
