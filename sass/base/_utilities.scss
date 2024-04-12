@@ -1,8 +1,10 @@
 .link-default,
 .link-default:link,
-.link-default:visited {
+.link-default:visited,
+.link-default:hover {
   display: inline-block;
   text-decoration: none;
+  color: $color-primary;
 }
 
 .margin-bottom-sm {
